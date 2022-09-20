@@ -1,9 +1,14 @@
 // main.dart
-// ignore_for_file: prefer_const_constructors, library_private_types_in_public_api, prefer_const_literals_to_create_immutables, unnecessary_new
+// ignore_for_file: prefer_const_constructors, library_private_types_in_public_api, prefer_const_literals_to_create_immutables, unnecessary_new, unused_import
 
 import 'dart:html';
 
-import 'package:bigposweb/Accounts%20Settings/component1.dart';
+import 'package:bigposweb/Accounts/changeemail.dart';
+import 'package:bigposweb/Accounts/changepass.dart';
+import 'package:bigposweb/Accounts/changeusername.dart';
+import 'package:bigposweb/Admin/Register.dart';
+import 'package:bigposweb/Certificates/certificates.dart';
+import 'package:bigposweb/prefrences/preference.dart';
 import 'package:bigposweb/search%20sec/datamodel.dart';
 import 'package:bigposweb/navbar.dart';
 import 'package:bigposweb/testfile.dart';
@@ -27,10 +32,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Explore',
-        theme: ThemeData(
-          visualDensity: VisualDensity.adaptivePlatformDensity,
-        ),
-        home: BuildBusinessCard());
+      title: 'Explore',
+      theme: ThemeData(
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: Register(),
+    );
   }
 }
